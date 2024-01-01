@@ -6,7 +6,7 @@ export default function (app) {
 		config.defaults = {};
 	}
 
-	config.defaults.routeNamePrefix = '';
+	config.defaults.routeNamePrefix = 'admin.';
 
 	app.use(ZygotVue, config);
 	
