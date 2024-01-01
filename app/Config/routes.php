@@ -15,6 +15,4 @@
  * Définition des routes
  * --------------------------------------------------------------------
  */
-$routes->get('/', 'HomeController::index');
-
-service('auth')->routes($routes);
+auth()->routes($routes, ['except' => ['auth-actions', 'logout']]);

@@ -12,7 +12,7 @@ class Inertia extends Middleware
      *
      * @see https://inertiajs.com/server-side-setup#root-template
      */
-    protected string $rootView = 'app';
+    protected string $rootView = '\Folio\Admin\Views\app';
 
     /**
      * Détermine la version actuelle des assets.
@@ -31,8 +31,17 @@ class Inertia extends Middleware
      */
     public function share(ServerRequestInterface $request): array
     {
-        return array_merge(parent::share($request), [
-
+		return array_merge(parent::share($request), [
+            "auth" => function () use ($request) {
+				$user = auth()->user();
+                return [
+                    "user" => $user ? [
+                        "id"       => $user->id,
+                        "username" => $user->username,
+                    ] : null
+                ];
+            },
+			'flash' => fn() => session()->getFlashdata()
         ]);
     }
 }

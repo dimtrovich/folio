@@ -103,8 +103,8 @@ return [
      * @var array<string, string>
      */
     'redirects' => [
-        'register'          => '/',
-        'login'             => '/',
+        'register'          => 'admin.dashboard',
+        'login'             => 'admin.dashboard',
         'logout'            => 'login',
         'force_reset'       => '/',
         'permission_denied' => '/',

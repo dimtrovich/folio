@@ -77,10 +77,7 @@ import { useUserinterfaceStore } from '@/stores/userinterface';
 import { toggleSidebar } from '@/assets/js/template';
 
 const userinterfaceStore = useUserinterfaceStore()
-const user = computed(() => ({
-	username: 'Default'
-}))
-// const user = computed(() => usePage().props.value.auth.user)
+const user = computed(() => usePage().props.value.auth.user)
 
 const textColor = computed(() => userinterfaceStore.isNavFixed ? 'text-dark' : 'text-white')
 
