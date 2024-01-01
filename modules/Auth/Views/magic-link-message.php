@@ -11,7 +11,7 @@
 
 <?= $this->start('form-footer') ?>
 
-<p class="text-sm mx-auto">
+<p class="mb-4 text-sm mx-auto">
 	<a href="<?= url_to('login') ?>" class="text-primary text-gradient font-weight-bold"><?= lang('Auth.backToLogin') ?></a>
 </p>
 

@@ -1,78 +1,75 @@
-import { i18n } from '@/plugins/i18n'
-const _t = i18n.global.t;
-
 export default [
 	{
-		text: _t('Tableau de bord'),
+		text: 'tableau_de_bord',
 		route: 'dashboard',
-		icon: 'flaticon-layout',
+		icon: 'fa fa-tachometer-alt',
 	},
 	{
 		text: 'MAIN',
 		divider: true,
 	},
 	{
-		text: _t('Portfolio'),
+		text: 'portfolio',
 		icon: 'fa fa-flask',
 		submenu: [
 			{
-				text: _t('Configuration'),
+				text: 'configuration',
 				route: 'portfolio.config'
 			},
 			{
-				text: _t('A propos'),
+				text: 'a_propos',
 				route: 'portfolio.about'
 			},
 			{
-				text: _t('Competences'),
+				text: 'competences',
 				route: 'competences.index'
 			},
 			{
-				text: _t('Education'),
+				text: 'education',
 				route: 'portfolio.education'
 			},
 			{
-				text: _t('Experiences'),
+				text: 'experiences',
 				route: 'experiences.index'
 			},
 			{
-				text: _t('Projets'),
+				text: 'projets',
 				route: 'portfolio.project'
 			},
 			{
-				text: _t('Services'),
+				text: 'services',
 				route: 'portfolio.services'
 			},
 		],
 		
 	},
 	{
-		text: _t('Curriculum Vitae'),
+		text: 'curriculum_vitae',
 		route: 'cv',
 		icon: 'fa fa-id-card',
 	},
 	{
-		text: _t('Communaute'),
+		text: 'communaute',
 		divider: true,
 	},
 	{
-		text: _t('Blog'),
+		text: 'blog',
 		icon: 'fa fa-newspaper',
 		submenu: [
 			{
-				text: _t('Categories'),
+				text: 'categories',
 				route: 'blog.categories'
 			},
 			{
-				text: _t('Articles'),
+				text: 'articles',
 				route: 'blog.articles'
 			},
 		],
 		
 	},
 	{
-		text: _t('Communaute'),
-		icon: 'flaticon-381-newspaper',
+		text: 'communaute',
+		icon: 'fa fa-newspaper',
 		submenu: [
 			{
 				text: 'messages',
@@ -86,27 +83,27 @@ export default [
 		
 	},
 	{
-		text: _t('Visiteurs'),
+		text: 'visiteurs',
 		route: 'cv',
-		icon: 'flaticon-user',
+		icon: 'fa fa-users',
 	},
 	{
-		text: _t('Configurations'),
+		text: 'configurations',
 		divider: true,
 	},
 	{
-		text: _t('optimisation'),
+		text: 'optimisation',
 		route: 'optimize',
 		icon: 'fa fa-bolt',
 	},
 	{
-		text: _t('Logs'),
+		text: 'logs',
 		route: 'logs',
-		icon: 'flaticon-381-list',
+		icon: 'fa fa-file-lines',
 	},
 	{
-		text: _t('Parametres'),
+		text: 'parametres',
 		route: 'settings',
-		icon: 'flaticon-admin',
+		icon: 'fa fa-cogs',
 	},
 ]

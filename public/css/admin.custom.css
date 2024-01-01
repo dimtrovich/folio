@@ -1,0 +1,17 @@
+[data-bs-theme="dark"] .pagination {
+	--bs-pagination-color: #5e72e4;
+	--bs-pagination-bg: #111c44;
+	--bs-pagination-border-color: #dee2e6;
+	--bs-pagination-hover-color: #233dd2;
+	--bs-pagination-hover-bg: #e9ecef;
+	--bs-pagination-hover-border-color: #dee2e6;
+	--bs-pagination-focus-color: #233dd2;
+	--bs-pagination-focus-bg: #e9ecef;
+	--bs-pagination-focus-box-shadow: 0 0 0 0.2rem rgba(94, 114, 228, .25);
+	--bs-pagination-active-color: #111c44;
+	--bs-pagination-active-bg: #5e72e4;
+	--bs-pagination-active-border-color: #5e72e4;
+	--bs-pagination-disabled-color: #6c757d;
+	--bs-pagination-disabled-bg: #242b42;
+	--bs-pagination-disabled-border-color: #dee2e6;
+}

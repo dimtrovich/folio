@@ -7,8 +7,9 @@
 <?= $this->section('content') ?>
 
 <form role="form" action="<?= url_to('magic-link') ?>" method="post">
-	<div class="mb-1 form-group">
-		<input name="email" type="email" value="<?= old('email', auth()->user()?->email) ?>" class="form-control" placeholder="<?= lang('Auth.email') ?>" required autocomplete="email" />
+	<div class="mb-3 input-group">
+		<input name="email" type="email" value="<?= old('email', auth()->user()?->email) ?>" class="form-control form-control-lg" placeholder="<?= lang('Auth.email') ?>" required autocomplete="email" />
+		<span class="input-group-text text-body"><i aria-hidden="true" class="fas fa-envelope"></i></span>
 	</div>
 	
 	<div class="text-center">
@@ -20,7 +21,7 @@
 
 <?= $this->start('form-footer') ?>
 
-<p class="text-sm mx-auto">
+<p class="mb-4 text-sm mx-auto">
 	<a href="<?= url_to('login') ?>" class="text-primary text-gradient font-weight-bold"><?= lang('Auth.backToLogin') ?></a>
 </p>
 

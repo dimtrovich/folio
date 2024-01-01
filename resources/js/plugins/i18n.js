@@ -13,6 +13,7 @@ export const i18n = createI18n({
 export function changeLanguage(language) {
 	$storage.cookie.set('locale', language);
 	i18n.global.locale = language;
+	window.location.reload();
 }
 
 export default function (app) {
@@ -27,7 +28,7 @@ function loadLocaleMessages () {
 	const files = import.meta.glob('../translations/**/*.js', { eager: true });
 
 	Object.entries(files).forEach(([path, definition]) => {
-		const locale = path.split('/')[1]
+		const locale = path.split('/')[2]
 		if (!messages[locale]) {
 			messages[locale] = {}
 		}
