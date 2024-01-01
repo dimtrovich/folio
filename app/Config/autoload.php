@@ -36,6 +36,8 @@ return [
      */
     'psr4' => [
         APP_NAMESPACE => APP_PATH, // Pour l'espace de noms d'application personnalisé
+		'Folio\Auth'  => ROOTPATH . 'modules' . DS . 'Auth' . DS,
+        'Folio\Admin' => ROOTPATH . 'modules' . DS . 'Admin' . DS,
     ],
 
     /**
